@@ -85,7 +85,7 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 
 9.) The graph view of the DAG after the ETL pipeline is completed.
 
-![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-dag-2.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/blob/main/04_AutomateDatapipelinesWithAirflow/images/airflow-dag-2.png)
 
 10.) The tree view of the DAG after the ETL pipeline is completed.
 
