@@ -89,6 +89,6 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 
 10.) The tree view of the DAG after the ETL pipeline is completed.
 
-![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-tree-view.png)
+![ScreenShot](airflow-tree-view.png)
 
 11.) Remember to delete your cluster each time you are finished working to avoid large, unexpected costs.
