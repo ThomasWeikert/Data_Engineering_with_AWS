@@ -117,7 +117,7 @@ JSON files in this directory contain logs on user activity. These log datasets a
 - log_data/2018/11/2018-11-13-events.json
 
 An example of what log data looks like.
-![alt text](https://github.com/ThomasWeikert/Datawarehouse/blob/main/images/log-data.png)
+![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/blob/main/02_CloudDataWarehouses/images/log-data.png)
 
 
 **log_json_path.json:** A JSONPath file mapping the JSON elements in the log_data to the appropriate columns in the Redshuft staging table staging_events .
