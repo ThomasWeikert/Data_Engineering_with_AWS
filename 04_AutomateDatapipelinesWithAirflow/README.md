@@ -11,7 +11,7 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 
 ## ETL Pipeline
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-dag-2.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-dag-2.png)
 
 - The Begin execution task marks the beginning of the ETL.
 - The Create staging events table task creates the staging events SQL table on Redshift.
@@ -48,12 +48,12 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 
 2.) In Airflow's UI, configure your AWS credentials and connection to Redshift. Click on the Admin tab and select Connections.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/create-connection.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/create-connection.png)
 
 
 3.) Under Connections, select Create.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/create-connection.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/create-connection.png)
 
 4.) On the create connection page, enter the following values:
 - Conn Id: Enter aws_credentials.
@@ -61,7 +61,7 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 - Login: Enter your Access key ID from the IAM User credentials you downloaded earlier.
 - Password: Enter your Secret access key from the IAM User credentials you downloaded earlier.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/connection-redshift.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/connection-redshift.png)
 
 5.) Once you've entered these values, select Save and Add Another.
 6.) On the next create connection page, enter the following values:
@@ -73,22 +73,22 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 - Password: Enter the password you created when launching your Redshift cluster.
 - Port: Enter 5439.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/cluster-details.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/cluster-details.png)
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/connection-redshift.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/connection-redshift.png)
 
 7.) Once you've entered these values, select Save.
 
 8.) Start the DAG by switching it from OFF to ON.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/start_dag.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/start_dag.png)
 
 9.) The graph view of the DAG after the ETL pipeline is completed.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-dag-2.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-dag-2.png)
 
 10.) The tree view of the DAG after the ETL pipeline is completed.
 
-![alt text](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-tree-view.png)
+![ScreenShot](https://github.com/ThomasWeikert/Data_Engineering_with_AWS/tree/main/04_AutomateDatapipelinesWithAirflow/images/airflow-tree-view.png)
 
 11.) Remember to delete your cluster each time you are finished working to avoid large, unexpected costs.
